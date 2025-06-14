@@ -37,10 +37,44 @@ let booleanIsLogggedIn = Boolean(isLoggedIn)
 let num = false
 let stringNum = String(num)
 
-console.log(typeof stringNum);
-console.log(stringNum);
+// console.log(typeof stringNum);
+// console.log(stringNum);
 
 
+// ************************* Operations *******************************
+
+let value = 3
+let negValue = -value
+// console.log(negValue)
+
+// NOTE: for multiline commet use:    [Ctrl + Shift + A]
+
+/*
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(2%2);
+console.log(2**2);
+
+*/
+
+let str1 = "Hello"
+let str2 = "Shivam"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+
+let myVal = 100;
+let postInc = myVal++;      // First, the value will be assigned to the variable, and then it will be incremented.
+
+let myVal_1 = 100
+let preInc = ++myVal_1;     // Now, it will be incremented first; thereafter, it will be assigned to the variable.
+
+console.log(postInc);
+console.log(preInc);
 
 
 
