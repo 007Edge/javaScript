@@ -55,3 +55,11 @@ function sum(a, b) {           // Function
 
 let result = sum(5,6);        // calling and storing value
 console.log(result);
+
+
+/*
+    NOTE: 
+    stack(primitive)        copy
+    heap(non-primitive)     reference
+
+*/
