@@ -80,10 +80,29 @@ const obj2 = {3: "c", 4: "d"};
 
 */
 
-console.log(regularUser.hasOwnProperty("email"));
+// console.log(regularUser.hasOwnProperty("email"));
 
 
+/* 
 
+    ******Object destructuring*****
 
+    const course = {
+        coursename: 'js with me!',
+        price: 999,
+        courseInstructor: "edge"
+    }
 
+    // some times it is not good pratice to use synatx like: course.consrseInstructor
+    // insted of that use this: const {key} = obj_name || now you can access it by just console.log(key);
 
+    const {courseInstructor} = course;
+    console.log(courseInstructor);
+
+    // or if you find to type courseInstructor very lenghtly
+    // you can use: const {courseInstructor: cI} = course;  || now console.log(cI);
+
+    const {courseInstructor: cI} = course;
+    console.log(cI); 
+
+*/
