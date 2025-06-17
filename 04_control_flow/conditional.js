@@ -49,34 +49,46 @@ let age = 324;
     and the empty string will be a false value. 
 */
 
-// Checking weather array is empty
-let userEmail =[];
-if(userEmail.length === 0) console.log("Array is empty");
+/* 
 
-// Checking weather object is empty
-const obj = {} 
-if(Object.keys(obj).length === 0) console.log("Object is empty");
+    // Checking weather array is empty
+
+    let userEmail =[];
+    if(userEmail.length === 0) console.log("Array is empty");
+
+    // Checking weather object is empty
+    // Object.keys(obj) will return an array
+
+    const obj = {} 
+    if(Object.keys(obj).length === 0) console.log("Object is empty");
+
+*/
 
 
+/* 
 
-let day = "mon";
+    let day = "mon";
 
-switch(day) {
+    switch(day) {
 
-    case "sun":
-        console.log("Sunday");
-        break;
+        case "sun":
+            console.log("Sunday");
+            break;
 
-    case "mon":
-        console.log("Monday");
-        break;
+        case "mon":
+            console.log("Monday");
+            break;
 
-    case "tue":
-        console.log("Tuesday");
-        break;
+        case "tue":
+            console.log("Tuesday");
+            break;
 
-    case "wed":
-        console.log("Wednesday");
-        break;
+        case "wed":
+            console.log("Wednesday");
+            break;
 
-}
+    } 
+
+*/
+
+
