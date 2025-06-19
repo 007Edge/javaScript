@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element formation</title>
+
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    
+</body>
+<script>
+    // creating element
+    const div = document.createElement('div')
+    div.className = "main"
+    div.id = "myId"
+    div.setAttribute('title','generated title')
+    div.style.padding = '15px'
+    div.style.backgroundColor = 'green'
+    div.style.borderRadius = '10px'
+
+    // div.innerHTML = "Hello my name is shivam";
+    const addText = document.createTextNode("Hello my name is edge")
+    div.appendChild(addText)
+
+    //adding div to html page
+    document.body.appendChild(div)
+
+
+    
+</script>
+</html>
