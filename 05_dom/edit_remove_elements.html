@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit and remove elements</title>
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // NOTE: innerHTML traverse whole tree that's why it is not recomended for large scale projects
+    //.createElement('element_Name')
+    //.appendChild(element)
+
+
+    //***************** adding element ******************
+
+    function addLanguage(name) {
+        const elem = document.createElement('li');   
+        elem.innerHTML = `${name}`                      // adding text to the element 
+        document.body.querySelector('.language').appendChild(elem)  // you can remove .body from this line, it will make no change
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+    addLanguage("C++")
+    addLanguage("C")
+
+
+    
+    function addOptimizeLanguage(langName) {
+        const elem = document.createElement('li');
+        // this does not traverse the whole tree of html
+        // that's why this approch is better for large scale projects
+        elem.appendChild(document.createTextNode(langName))  // adding text to the element
+        document.querySelector('.language').appendChild(elem)
+    }
+
+    addOptimizeLanguage("GoLang")
+
+    // ************* Editing Element **************
+    function changeElem(langName, pos) {
+        const secondLang = document.querySelector(`li:nth-child(${pos})`);
+        const newLi = document.createElement('li');
+        newLi.appendChild(document.createTextNode(`${langName}`))
+        secondLang.replaceWith(newLi)
+    }
+
+    // changeElem("Ruby",5)
+    
+
+    // 1: selecting 2nd list
+    // 2: creating a newList(newLi)
+    // 3: adding text to newLi in optimize way
+    // 4: replacing it with secondLang
+
+    // ************ Removing Element ***************
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
+    
+    
+
+</script>
+</html>
