@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: #212121;
+        color: wheat;
+    }
+</style>
+<body>
+    <div class="conatiner">
+        <div id="Heading">Number guessing game</div>
+        <br>
+        <div class="para">Try and guess a random number between 1 and 100.</div>
+        <div class="para">You have 10 attempts to guess the right number.</div>
+        <br>
+        <div>
+            <form>
+                <label for="guessField">Guess a number</label>
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" id="btn" value="Submit guess" class="submitGuess">
+            </form>
+        </div>
+        <br>
+        
+        <div class="prev">Previous guess:</div>
+        <div class="rem">Guess Remaining 10</div>
+        <div class="results"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
