@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .parent {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        padding: 5rem;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .items {
+        display: flex;
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+        align-items: center; 
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 2px;
+    }
+    #heading {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: black;
+        color: wheat;
+    }
+    #red {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #gold {
+        background-color: yellow;
+    }
+    #blue {
+        background-color: blue;
+        color: wheat;
+    }
+    #grey {
+        background-color: gray;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+</style>
+<body>
+    
+    <div class="parent">
+        <!-- <h1 class="heading">Background Color Change</h1> -->
+        <div class="items" id="heading">Change Color</div>
+        <div class="items" id="red">RED</div>
+        <div class="items" id="gold">GOLD</div>
+        <div class="items" id="blue">BLUE</div>
+        <div class="items" id="grey">GREY</div>
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
