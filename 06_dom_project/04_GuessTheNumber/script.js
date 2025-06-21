@@ -1,5 +1,5 @@
 let randomNumber = parseInt((Math.random()*100)+1);
-console.log(randomNumber);
+// console.log(randomNumber);
 
 const submit = document.querySelector('.submitGuess')
 const userInput = document.querySelector('.guessField')
@@ -55,7 +55,7 @@ function checkGuess(guess) {
 
     }
     if(remaining == 0) {
-        displayMessage(`Oops! the numbers was.. ${guess}`);
+        displayMessage(`Oops! the numbers was.. ${randomNumber}`);
         endGame();   
     }
     
