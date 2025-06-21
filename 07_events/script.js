@@ -40,10 +40,9 @@ document.getElementById('google').addEventListener('click', function(e){
 // means handling events with help of event bubbling
 
 document.querySelector('#images').addEventListener('click', function(e){
-    // if(e.target.tagName === 'IMG') {
-    //     e.target.parentNode.remove();
-    // }
-    // console.log(e.target.className);
+    if(e.target.tagName === 'IMG') {
+        e.target.parentNode.remove();
+    }
     
     console.log(e.type);  // this returns tag Name is capslock
     
