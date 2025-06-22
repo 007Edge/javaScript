@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-color change</title>
+    <style>
+        *{
+            background-color: #212121;
+            padding: 0;
+            margin: 0;
+            color: wheat;
+            
+        }
+        body {
+            background-color: cyan;
+            height: 100vh;
+            width: 100vw;
+        }
+        h1 {
+            text-align: center;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0;
+        }
+        button {
+            margin: 30px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            font-size: large;
+            background-color: skyblue;
+            box-shadow: 2px 2px 5px black;
+            color: black;
+        }
+        button:hover {
+            background-color: blueviolet;
+            color: black;
+            box-shadow: 3px 3px 10px black;
+            
+        }
+        button:active {
+            box-shadow:1px 1px 0 black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>backgroundColor Change</h1>
+    <div>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
