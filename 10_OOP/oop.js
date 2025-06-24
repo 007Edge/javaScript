@@ -22,7 +22,7 @@ function user(username, loginCount, isLoggedIn) {
         
     }
 
-    return this;
+    return this;      // returning this is optional because it will be implicitly done 
 }
 
 const userOne = new user('shivam', 1, true);
@@ -30,6 +30,3 @@ const userTwo = new user('alex', 1, true);
 
 userOne.greet()
 userTwo.greet()
-
-
-
