@@ -41,3 +41,16 @@ console.log(personOne.greet());
     Prototype Chain obj-> Person.prototype -> Object.prototype -> null 
 
 */
+
+
+// ********************** adding self made method to find true length ************************** 
+
+String.prototype.trueLength = function() {
+    console.log(`${this}`);
+    console.log(`${this.trim().length}`);
+    
+    
+}
+
+"shivam       ".trueLength();
+"edge".trueLength();
