@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click</button>
+</body>
+<script>
+    class React {
+        constructor () {
+            this.library = 'React'
+            this.server = 'https://localhost:300'
+
+            //requirement
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleClick.bind(this))  
+                //.bind(this passes constructor function as a object)
+            
+        }
+        handleClick() {
+            console.log('button clicked');
+            console.log(this);      // if we remove .bind(this) the output will be 'button element'
+            
+            console.log(this.library); 
+            console.log(this.server);
+            
+                
+        }
+    }
+
+    const obj = new React();
+    
+    
+</script>
+</html>
