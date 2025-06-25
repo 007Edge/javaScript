@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+        body {
+            background-color: #191919;
+        }
+        #outer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        button {
+            height: initial;
+            width: initial;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 5px;
+            border: 2px solid black;
+            background-color: red;
+        }
+        button:hover {
+            background-color: blueviolet;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <button id="gold">GOLD</button>
+        <button id="cyan">CYAN</button>
+    </div>
+</body>
+<script>
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`;  
+        console.log("Hi");
+        return function() {    
+        // NOTE: not only fucntion is returned, 
+        // all the things inside the returned function's lexical scope are returned
+        // i.e. this function and color variable
+
+            document.body.style.backgroundColor = `${color}`;
+        }
+        
+    }
+    document.getElementById('gold').onclick = clickHandler('gold')
+    document.getElementById('cyan').onclick = clickHandler('cyan')
+    
+    
+</script>
+</html>
